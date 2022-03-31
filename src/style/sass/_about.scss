@@ -1,0 +1,72 @@
+// About section
+.about-section {
+  background-color: #040507;
+  padding: 3.3rem 0;
+
+  .cards {
+    max-width: 55%;
+    .time {
+      display: none;
+    }
+    .text {
+      opacity: 0;
+    }
+    i {
+      transition: transform 0.5s ease-in-out;
+    }
+    :hover {
+      background: #eeeef1;
+      .heading {
+        color: $base-color;
+      }
+      .text {
+        color: $ternary-color;
+        opacity: 1;
+      }
+      .number {
+        display: none;
+      }
+      .time {
+        color: $ternary-color;
+        display: inline-block;
+      }
+      i {
+        color: $ternary-color;
+        transform: scaleX(2);
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+  }
+  .content {
+    max-width: 30%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    .content-header {
+      font-size: 2.3rem;
+      color: $pure-color;
+    }
+  }
+  .card {
+    border: 1px solid #464343;
+    padding: 1.5rem 1rem 1rem 1rem;
+    color: $secondary-color;
+    border-radius: 5px;
+    background-color: $primary-color;
+    max-width: 33%;
+
+    .heading {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+    .text {
+      font-size: 0.9rem;
+      padding-bottom: 1.2rem;
+      line-height: 1.2rem;
+    }
+    span {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// Schedule Section
+.schedule-sec {
+  background-color: $ternary-color;
+  padding: 3rem 0;
+  .cards {
+    max-width: 70%;
+  }
+  .card {
+    padding: 1rem;
+    background-color: $primary-color;
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    color: $secondary-color;
+    h2 {
+      font-size: 1.2rem;
+      padding: 0.8rem 0;
+    }
+    p {
+      padding-bottom: 1.2rem;
+    }
+  }
+  .heading {
+    max-width: 25%;
+    font-size: 2.7rem;
+    font-weight: 500;
+    padding: 2rem 0 0 2rem;
+    line-height: 2.9rem;
+  }
+}

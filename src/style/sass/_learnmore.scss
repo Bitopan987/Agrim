@@ -1,0 +1,16 @@
+// Learnmore Section
+
+.learn-more {
+  background-image: linear-gradient(to right, #5a32ce, #7ccae3);
+  padding: 3rem 0;
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: $secondary-color;
+  }
+  p {
+    font-size: 1.1rem;
+    color: #dbd3d3;
+    font-weight: 100;
+  }
+}

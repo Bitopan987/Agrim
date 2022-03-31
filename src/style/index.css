@@ -384,7 +384,7 @@ img {
 
 .hero-section {
   height: 100vh;
-  background-image: url("../../public/images/Asset2.png");
+  background-image: url("../../../public/images/Asset2.png");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -636,8 +636,8 @@ img {
 }
 
 .faq-section {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1a161657), to(#1d1c1c57)), url("../../public/images/team.png") 0 0, no-repeat;
-  background: linear-gradient(#1a161657, #1d1c1c57), url("../../public/images/team.png") 0 0, no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a161657), to(#1d1c1c57)), url("../../../public/images/team.png") 0 0, no-repeat;
+  background: linear-gradient(#1a161657, #1d1c1c57), url("../../../public/images/team.png") 0 0, no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 4rem 0;

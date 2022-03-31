@@ -1,0 +1,30 @@
+// Header
+.header {
+  background-color: rgb(12, 12, 12);
+  padding: 1rem 0;
+  color: $secondary-color;
+  border-bottom: 1px solid #4d4a4a;
+  .menu {
+    width: 2rem;
+  }
+  .logo {
+    a {
+      color: $secondary-color;
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      font-family: 'Righteous', cursive;
+    }
+  }
+  .nav li {
+    margin: 0 0.5rem;
+    a {
+      color: $secondary-color;
+      font-size: 0.9rem;
+    }
+    i {
+      color: $base-color;
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// Service Section
+.service-section {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 6rem 0;
+  .options {
+    li {
+      padding: 0.2rem 0;
+      a {
+        color: #817c7c;
+      }
+    }
+  }
+  .service-content {
+    h3 {
+      color: $ternary-color;
+      padding-bottom: 1.4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    p {
+      padding: 1.3rem 0;
+      line-height: 1.7rem;
+      font-weight: 200;
+    }
+    li {
+      list-style-type: disc;
+      margin-left: 1rem;
+      padding: 0.5rem 0;
+    }
+    .btn-secondary {
+      margin-top: 2rem;
+    }
+  }
+  .img-container {
+    background-color: $secondary-color;
+    padding: 3rem 3rem 4rem 3rem;
+    position: relative;
+    span {
+      position: absolute;
+      background-color: $ternary-color;
+      padding: 1rem;
+      font-size: 2rem;
+      top: -4rem;
+      left: 0;
+    }
+  }
+}

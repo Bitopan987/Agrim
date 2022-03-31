@@ -1,0 +1,40 @@
+// faq-section
+.faq-section {
+  background: linear-gradient(#1a161657, #1d1c1c57),
+    url('../../../public/images/team.png') 0 0, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4rem 0;
+  height: 100vh;
+  color: $secondary-color;
+  padding-bottom: 2rem;
+  .container {
+    max-width: 60%;
+  }
+  strong {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 100;
+    padding: 0.6rem 0 1.5rem 0;
+  }
+  .question {
+    background-color: $secondary-color;
+    margin: 1rem 0;
+    padding: 1rem;
+    h4 {
+      color: $primary-color;
+    }
+    p {
+      padding-top: 0.5rem;
+      color: #5c5858;
+      font-size: 0.8rem;
+    }
+    i {
+      color: $primary-color;
+      font-size: 1.4rem;
+    }
+  }
+}
