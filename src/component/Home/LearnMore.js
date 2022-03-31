@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function LearnMore() {
   return (
     <div className="learn-more">
@@ -9,9 +10,9 @@ function LearnMore() {
           </p>
         </article>
         <div className="btn-container">
-          <a href="/" className="btn btn-secondary">
+          <Link href="/" className="btn btn-secondary">
             Get The Report
-          </a>
+          </Link>
         </div>
       </div>
     </div>

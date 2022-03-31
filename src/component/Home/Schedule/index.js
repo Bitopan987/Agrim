@@ -1,4 +1,5 @@
 import data from './constants';
+import { Link } from 'react-router-dom';
 function Schedule() {
   return (
     <section className="schedule-sec">
@@ -28,9 +29,9 @@ function ScheduleCard({ heading, text, link, src }) {
       <img src={src} alt="col1.png"></img>
       <h2>{heading}</h2>
       <p>{text}</p>
-      <a href="/" className="btn-ternary btn">
+      <Link href="/" className="btn-ternary btn">
         {link}
-      </a>
+      </Link>
     </article>
   );
 }

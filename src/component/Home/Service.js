@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Service() {
   return (
     <section className="service-section">
@@ -5,15 +6,15 @@ function Service() {
         <aside className="flex-20">
           <ul className="options">
             <li>
-              <a href="/">Cloud Transformation</a>
+              <Link href="/cloud">Cloud Transformation</Link>
             </li>
             <li>
-              <a href="/" id="active">
+              <Link href="/automation" id="active">
                 Intelligent Automation
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">Cloud Security Services</a>
+              <Link href="/cloud">Cloud Security Services</Link>
             </li>
           </ul>
         </aside>
@@ -32,9 +33,9 @@ function Service() {
             <li>Business Process Automation</li>
             <li>Artificial Intelligence and Analytic Solution</li>
           </ul>
-          <a href="/" className="btn btn-secondary">
+          <Link href="/" className="btn btn-secondary">
             Let's Work Together
-          </a>
+          </Link>
         </article>
         <div className="img-container flex-30">
           <img src="/images/Group.png" alt="Group.png"></img>

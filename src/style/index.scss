@@ -147,7 +147,7 @@ table {
 $base-color: #9438f7;
 $primary-color: black;
 $secondary-color: #ebe5e5;
-$ternary-color: #18bff1;
+$ternary-color: #0bafe0;
 $pure-color: white;
 
 /* Modular Class */
@@ -188,7 +188,7 @@ img {
   background-clip: padding-box;
   overflow: hidden;
   z-index: 1;
-
+  color: $secondary-color;
   &::after {
     content: '';
     position: absolute;
@@ -196,16 +196,14 @@ img {
     left: 50%;
     width: 70vmax;
     height: 70vmax;
-    background-image: linear-gradient(to right, #21086b, #1f87aa, #fff);
-    opacity: 0.3;
+    background-image: linear-gradient(to right, #6138db, #1995c2, #ffff);
     transform-origin: left;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 1s ease-in-out;
+    transition: transform 0.8s ease-in-out;
     z-index: -1;
   }
   &:hover,
   &:hover:focus {
-    color: var(--textColor2);
     &::after {
       transform: translate(-50%, -50%) scale(1);
     }
@@ -215,11 +213,62 @@ img {
 .btn-secondary {
   background-color: $secondary-color;
   color: #353232;
+  position: relative;
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 1;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70vmax;
+    height: 70vmax;
+    background-image: linear-gradient(to right, #5222e4, #1995c2);
+    transform-origin: left;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  &:hover,
+  &:hover {
+    color: #e7d1d1;
+    &::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
 }
 
 .btn-ternary {
   border: 1.5px solid $secondary-color;
   color: $secondary-color;
+  position: relative;
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 1;
+  transition: border 0.8s ease-in-out;
+  &::after {
+    color: $secondary-color;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70vmax;
+    height: 70vmax;
+    background-image: linear-gradient(to right, $base-color, #3737d3);
+    transform-origin: left;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.8s ease-in-out;
+    z-index: -1;
+  }
+  &:hover,
+  &:hover {
+    border: 1.5px solid transparent;
+    transition: border 0.5s ease-in-out;
+    &::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
 }
 
 .arrow {
@@ -343,7 +392,10 @@ img {
       display: none;
     }
     .text {
-      visibility: visible;
+      opacity: 0;
+    }
+    i {
+      transition: transform 0.5s ease-in-out;
     }
     :hover {
       background: #eeeef1;
@@ -352,7 +404,7 @@ img {
       }
       .text {
         color: $ternary-color;
-        visibility: visible;
+        opacity: 1;
       }
       .number {
         display: none;
@@ -360,6 +412,11 @@ img {
       .time {
         color: $ternary-color;
         display: inline-block;
+      }
+      i {
+        color: $ternary-color;
+        transform: scaleX(2);
+        transition: transform 0.4s ease-in-out;
       }
     }
   }
@@ -388,7 +445,7 @@ img {
     }
     .text {
       font-size: 0.9rem;
-      padding-bottom: 0.8rem;
+      padding-bottom: 1.2rem;
       line-height: 1.2rem;
     }
     span {

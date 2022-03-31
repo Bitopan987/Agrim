@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Footer() {
   const data = [
     {
@@ -44,9 +45,9 @@ function Footer() {
             return (
               <li>
                 <h5>{val.heading}</h5>
-                <a href="/">{val.link1}</a>
-                <a href="/">{val.link2}</a>
-                <a href="/">{val.link3}</a>
+                <Link href="/">{val.link1}</Link>
+                <Link href="/">{val.link2}</Link>
+                <Link href="/">{val.link3}</Link>
               </li>
             );
           })}

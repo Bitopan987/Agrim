@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Hero() {
   const links = [
     'Cloud Transformation',
@@ -19,9 +20,9 @@ function Hero() {
         {links.map((link) => {
           return (
             <li>
-              <a className="link" href="/">
+              <Link className="link" href="/">
                 {link}
-              </a>
+              </Link>
             </li>
           );
         })}

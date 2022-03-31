@@ -183,6 +183,7 @@ img {
   background-clip: padding-box;
   overflow: hidden;
   z-index: 1;
+  color: #ebe5e5;
 }
 
 .btn_primary::after {
@@ -192,22 +193,17 @@ img {
   left: 50%;
   width: 70vmax;
   height: 70vmax;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21086b), color-stop(#1f87aa), to(#fff));
-  background-image: linear-gradient(to right, #21086b, #1f87aa, #fff);
-  opacity: 0.3;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6138db), color-stop(#1995c2), to(#ffff));
+  background-image: linear-gradient(to right, #6138db, #1995c2, #ffff);
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
   z-index: -1;
-}
-
-.btn_primary:hover, .btn_primary:hover:focus {
-  color: var(--textColor2);
 }
 
 .btn_primary:hover::after, .btn_primary:hover:focus::after {
@@ -218,11 +214,82 @@ img {
 .btn-secondary {
   background-color: #ebe5e5;
   color: #353232;
+  position: relative;
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-secondary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vmax;
+  height: 70vmax;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5222e4), to(#1995c2));
+  background-image: linear-gradient(to right, #5222e4, #1995c2);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn-secondary:hover, .btn-secondary:hover {
+  color: #e7d1d1;
+}
+
+.btn-secondary:hover::after, .btn-secondary:hover::after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .btn-ternary {
   border: 1.5px solid #ebe5e5;
   color: #ebe5e5;
+  position: relative;
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: border 0.8s ease-in-out;
+  transition: border 0.8s ease-in-out;
+}
+
+.btn-ternary::after {
+  color: #ebe5e5;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vmax;
+  height: 70vmax;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9438f7), to(#3737d3));
+  background-image: linear-gradient(to right, #9438f7, #3737d3);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  z-index: -1;
+}
+
+.btn-ternary:hover, .btn-ternary:hover {
+  border: 1.5px solid transparent;
+  -webkit-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+}
+
+.btn-ternary:hover::after, .btn-ternary:hover::after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .arrow {
@@ -374,7 +441,14 @@ img {
 }
 
 .about-section .cards .text {
-  visibility: visible;
+  opacity: 0;
+}
+
+.about-section .cards i {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .about-section .cards :hover {
@@ -386,8 +460,8 @@ img {
 }
 
 .about-section .cards :hover .text {
-  color: #18bff1;
-  visibility: visible;
+  color: #0bafe0;
+  opacity: 1;
 }
 
 .about-section .cards :hover .number {
@@ -395,8 +469,18 @@ img {
 }
 
 .about-section .cards :hover .time {
-  color: #18bff1;
+  color: #0bafe0;
   display: inline-block;
+}
+
+.about-section .cards :hover i {
+  color: #0bafe0;
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 .about-section .content {
@@ -436,7 +520,7 @@ img {
 
 .about-section .card .text {
   font-size: 0.9rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 1.2rem;
   line-height: 1.2rem;
 }
 
@@ -445,7 +529,7 @@ img {
 }
 
 .schedule-sec {
-  background-color: #18bff1;
+  background-color: #0bafe0;
   padding: 3rem 0;
 }
 
@@ -493,7 +577,7 @@ img {
 }
 
 .service-section .service-content h3 {
-  color: #18bff1;
+  color: #0bafe0;
   padding-bottom: 1.4rem;
 }
 
@@ -526,7 +610,7 @@ img {
 
 .service-section .img-container span {
   position: absolute;
-  background-color: #18bff1;
+  background-color: #0bafe0;
   padding: 1rem;
   font-size: 2rem;
   top: -4rem;

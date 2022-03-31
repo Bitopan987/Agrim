@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Header() {
   const navData = [
     { name: 'Digital & Cloud', link: '/' },
@@ -9,26 +10,26 @@ function Header() {
     <header className="header">
       <div className="container flex justify-between align-center">
         <div className="logo">
-          <a href="/">AGRIM</a>
+          <Link href="/">AGRIM</Link>
         </div>
         <nav className="navbar flex justify-between align-center">
           <ul className="nav flex">
             {navData.map((data) => {
               return (
                 <li className="flex align-center">
-                  <a href={data.link}>{data.name}</a>
+                  <Link href={data.link}>{data.name}</Link>
                   <i class="ri-arrow-down-s-line"></i>
                 </li>
               );
             })}
           </ul>
           <div className="btn_container flex justify-between align-center">
-            <a href="/">
+            <Link href="/">
               <i class="ri-grid-fill menu"></i>
-            </a>
-            <a className="btn_primary btn flex justify-between align-center">
+            </Link>
+            <Link className="btn_primary btn flex justify-between align-center">
               Contact Us<i class="ri-arrow-right-line arrow"></i>
-            </a>
+            </Link>
           </div>
         </nav>
       </div>
